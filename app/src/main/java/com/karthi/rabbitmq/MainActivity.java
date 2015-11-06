@@ -105,10 +105,10 @@ public class MainActivity extends Activity {
 		});
 
         // Create the consumer image
-        mConsumer = new MessageConsumer("diablo", "testebinario", "fanout");
+        mConsumer2 = new MessageConsumer("diablo", "testebinario", "fanout");
         new consumerconnect().execute();
         // register for messages
-        mConsumer.setOnReceiveMessageHandler(new OnReceiveMessageHandler() {
+        mConsumer2.setOnReceiveMessageHandler(new OnReceiveMessageHandler() {
 
             public void onReceiveMessage(byte[] message) {
 
@@ -279,6 +279,7 @@ public class MainActivity extends Activity {
 
 				// Connect to broker
 				mConsumer.connectToRabbitMQ();
+                mConsumer2.connectToRabbitMQ();
 
 
 
@@ -302,5 +303,6 @@ public class MainActivity extends Activity {
 	protected void onPause() {
 		super.onPause();
 		mConsumer.dispose();
+        mConsumer2.connectToRabbitMQ();
 	}
 }
