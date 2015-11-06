@@ -1,0 +1,30 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 17
+    buildToolsVersion "23.0.2"
+
+    packagingOptions {
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+    }
+    defaultConfig {
+        applicationId "com.karthi.rabbitmq"
+        minSdkVersion 10
+        targetSdkVersion 17
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    compile 'com.android.support:support-v4:18.0.0'
+    compile files('libs/commons-cli-1.1.jar')
+    compile files('libs/commons-io-1.2.jar')
+    compile files('libs/rabbitmq-client.jar')
+}

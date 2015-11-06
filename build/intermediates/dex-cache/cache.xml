@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/home/dev-java/AndroidStudioProjects/RabbitMQ-Android-Chat/app/libs/commons-io-1.2.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="0ad6ae511ca4608a18317fcb19850fd113bb2ae8">
+        <dex dex="/home/dev-java/AndroidStudioProjects/RabbitMQ-Android-Chat/app/build/intermediates/pre-dexed/debug/commons-io-1.2-8af32ce7c25e6e66b1b502417a9d1a612512de27.jar" />
+    </item>
+    <item
+        jar="/home/dev-java/Android/Sdk/extras/android/m2repository/com/android/support/support-v4/18.0.0/support-v4-18.0.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="44ec51e9d395a47aab135e5e1b556c0007442156">
+        <dex dex="/home/dev-java/AndroidStudioProjects/RabbitMQ-Android-Chat/app/build/intermediates/pre-dexed/debug/support-v4-18.0.0-8b561c351a26ef71ebdabc4a10ab3cd0ae0b6ca5.jar" />
+    </item>
+    <item
+        jar="/home/dev-java/AndroidStudioProjects/RabbitMQ-Android-Chat/app/libs/commons-cli-1.1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="11c98b99ad538f2f67633afd4d7f4d98ecfbb408">
+        <dex dex="/home/dev-java/AndroidStudioProjects/RabbitMQ-Android-Chat/app/build/intermediates/pre-dexed/debug/commons-cli-1.1-bba400a23675c6dc7eab9f5234eeef81b185206d.jar" />
+    </item>
+    <item
+        jar="/home/dev-java/AndroidStudioProjects/RabbitMQ-Android-Chat/app/libs/rabbitmq-client.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="7cc090300006369282da40f33d33ee8ea94e72c2">
+        <dex dex="/home/dev-java/AndroidStudioProjects/RabbitMQ-Android-Chat/app/build/intermediates/pre-dexed/debug/rabbitmq-client-62afaf7accc517e87be6ba3fb57f500c922cf851.jar" />
+    </item>
+
+</items>
