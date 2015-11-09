@@ -113,7 +113,8 @@ public class MainActivity extends Activity {
             public void onReceiveMessage(byte[] message) {
 
                 ImageView imageView = (ImageView) findViewById(R.id.imgView);
-                imageView.setImageBitmap(getBitmap(message));
+				Bitmap bmp = getBitmap(message);
+                imageView.setImageBitmap(bmp.createScaledBitmap(bmp, 800, 600, false));
 
             }
         });
@@ -164,6 +165,7 @@ public class MainActivity extends Activity {
             ImageView imageView = (ImageView) findViewById(R.id.imgView);
             imageView.setImageBitmap(BitmapFactory.decodeFile(picturePath));
             Bitmap imagem = BitmapFactory.decodeFile(picturePath);
+            imagem = imagem.createScaledBitmap(imagem, 800, 600, false);
             new sendImage().execute(getByteArray(imagem));
 
         }
